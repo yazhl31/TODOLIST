@@ -1,6 +1,8 @@
 ﻿# TODOLIST
 
 A simple to-do list application built with React.
+click here to view demo https://todolist-delta-brown.vercel.app/
+
 
 ## 🚀 Features
 - Add, edit, and delete tasks
@@ -11,4 +13,3 @@ A simple to-do list application built with React.
 ```sh
 yarn install
 
-click here to view demo https://todolist-delta-brown.vercel.app/
