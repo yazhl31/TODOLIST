@@ -1,0 +1,124 @@
+/* Reset page margins and scrolling */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Container for creative notes */
+.creative-notes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: 100vh; /* Fill the viewport height */
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9fafb;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+
+  /* Background image */
+  background-image: url("cow.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Heading styling */
+.creative-notes-container h1 {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 20px;
+}
+
+/* Input field styling */
+.note-input {
+  width: 50%; /* Responsive width */
+  max-width: 600px;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 8px;
+  resize: none; /* Prevent resizing */
+  margin-bottom: 20px;
+  background: #f1f5f9;
+  box-sizing: border-box;
+}
+
+.note-input:focus {
+  border-color: black;
+  outline: none;
+}
+
+/* Add button styling */
+.add-note-btn {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-note-btn:hover {
+  background-color: black;
+}
+
+/* Notes list styling */
+.notes-list {
+  margin-top: 20px;
+  width: 50%;
+  max-width: 600px;
+  max-height: 300px; /* Fixed height for notes list */
+  overflow-y: auto; /* Add scroll if notes overflow */
+  background: rgba(255, 255, 255, 0.8); /* Slightly transparent */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* "No notes" message */
+.no-notes {
+  color: #6b7280;
+  font-size: 18px;
+}
+
+/* Individual note styling */
+.note-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 5px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.note-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #4b5563;
+  word-wrap: break-word;
+}
+
+/* Delete button */
+.delete-note-btn {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.delete-note-btn:hover {
+  color: #dc2626;
+}

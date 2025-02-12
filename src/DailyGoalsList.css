@@ -1,0 +1,117 @@
+/* General page background styling */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Prevent scrolling */
+  box-sizing: border-box;
+}
+
+.whole-page {
+  background-image: url("cat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Goals container styling */
+.goals-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%; /* Make it responsive */
+  max-width: 500px; /* Limit width */
+  text-align: center;
+  box-sizing: border-box;
+  position: relative; /* Prevent overflow adjustments */
+}
+
+/* Heading styling */
+#h2-2 {
+  color: #2e95aa;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Form container for adding tasks */
+.add-goal-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.add-goal-form input {
+  flex: 1; /* Fill available space */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.add-goal-form button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #2e95aa;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-goal-form button:hover {
+  background-color: #247c90;
+}
+
+/* List of goals */
+.goals-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: calc(100vh - 300px); /* Responsive height adjustment */
+  overflow: hidden; /* Remove scrollbars */
+}
+
+/* Individual goal items */
+.goal-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9fafb;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.goal-item.completed {
+  background: #d1fae5;
+  text-decoration: line-through;
+  color: #047857;
+}
+
+.goal-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Delete button styling */
+.delete-goal-btn {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.delete-goal-btn:hover {
+  color: #dc2626;
+}
